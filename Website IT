@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Offences and Road Safety</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Page -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#traffic-offences">Traffic Offences</a></li>
+                <li><a href="#payment-portal">Payment Portal</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Traffic Offences and Road Safety</h1>
+        <p>Our mission is to promote road safety and provide clear information on traffic offences and their consequences. Explore our resources and services below.</p>
+    </section>
+
+    <!-- Traffic Offences -->
+    <section id="traffic-offences">
+        <h2>Traffic Offences</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Offence</th>
+                    <th>Penalty</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Speeding</td>
+                    <td>$100 - $500</td>
+                    <td>2-6</td>
+                </tr>
+                <tr>
+                    <td>Running a Red Light</td>
+                    <td>$200</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Driving Without a License</td>
+                    <td>$300</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Payment Portal -->
+    <section id="payment-portal">
+        <h2>Payment Portal</h2>
+        <form action="/pay-ticket" method="post">
+            <label for="ticket-number">Ticket Number:</label>
+            <input type="text" id="ticket-number" name="ticket-number" required>
+
+            <label for="license-plate">License Plate:</label>
+            <input type="text" id="license-plate" name="license-plate" required>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <form action="/submit-inquiry" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Traffic Offences and Road Safety Organization. All rights reserved.</p>
+    </footer>
+</body>
+</html>
